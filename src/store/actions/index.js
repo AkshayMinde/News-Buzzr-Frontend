@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const fetchNewsHelper = async () => {
     try {
-        const res = await axios.get('http://localhost:3001/news')
+        const res = await axios.get('https://news-buzzr.onrender.com/news')
         // console.log(res);
         return res.data;
     } catch (error) {
@@ -20,7 +20,7 @@ export const fetchNews = () => {
 
 export const fetchNewsByIdHelper = async (id) => {
     try {
-        const res = await axios.get(`http://localhost:3001/news/${id}`)
+        const res = await axios.get(`https://news-buzzr.onrender.com/news/${id}`)
         return res.data;
     } catch (error) {
         console.log(error);

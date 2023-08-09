@@ -19,7 +19,7 @@ const ShowNews = () => {
   },[dispatch, params])
 
   const deleteNewsFromDB = async () => {
-    await axios.delete(`http://localhost:3001/news/${params.id}`);
+    await axios.delete(`https://news-buzzr.onrender.com/news/${params.id}`);
     toast.success('Successfully deleted the news', {
       position: "top-center",
       autoClose: 5000,
